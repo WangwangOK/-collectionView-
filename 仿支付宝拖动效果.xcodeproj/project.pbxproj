@@ -13,6 +13,8 @@
 		1EC818581B676CD0005B4626 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EC818571B676CD0005B4626 /* Images.xcassets */; };
 		1EC8185B1B676CD0005B4626 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EC818591B676CD0005B4626 /* LaunchScreen.xib */; };
 		1EC818671B676CD0005B4626 /* ________Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC818661B676CD0005B4626 /* ________Tests.swift */; };
+		1EC818721B67746B005B4626 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC818701B67746B005B4626 /* CollectionViewCell.swift */; };
+		1EC818731B67746B005B4626 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EC818711B67746B005B4626 /* CollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		1EC818601B676CD0005B4626 /* 仿支付宝拖动效果Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "仿支付宝拖动效果Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EC818651B676CD0005B4626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1EC818661B676CD0005B4626 /* ________Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "________Tests.swift"; sourceTree = "<group>"; };
+		1EC818701B67746B005B4626 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		1EC818711B67746B005B4626 /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,8 @@
 				1EC818501B676CD0005B4626 /* AppDelegate.swift */,
 				1EC818521B676CD0005B4626 /* ViewController.swift */,
 				1EC818541B676CD0005B4626 /* Main.storyboard */,
+				1EC818701B67746B005B4626 /* CollectionViewCell.swift */,
+				1EC818711B67746B005B4626 /* CollectionViewCell.xib */,
 				1EC818571B676CD0005B4626 /* Images.xcassets */,
 				1EC818591B676CD0005B4626 /* LaunchScreen.xib */,
 				1EC8184E1B676CD0005B4626 /* Supporting Files */,
@@ -194,6 +200,7 @@
 			files = (
 				1EC818561B676CD0005B4626 /* Main.storyboard in Resources */,
 				1EC8185B1B676CD0005B4626 /* LaunchScreen.xib in Resources */,
+				1EC818731B67746B005B4626 /* CollectionViewCell.xib in Resources */,
 				1EC818581B676CD0005B4626 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,6 +221,7 @@
 			files = (
 				1EC818531B676CD0005B4626 /* ViewController.swift in Sources */,
 				1EC818511B676CD0005B4626 /* AppDelegate.swift in Sources */,
+				1EC818721B67746B005B4626 /* CollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

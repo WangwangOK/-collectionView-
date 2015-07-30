@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4AC79D38-E10F-4958-B4FA-565AC49BE906</string>
+	<key>IDESourceControlProjectName</key>
+	<string>仿支付宝拖动效果</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>FFC003AB35C6CB3F915004CBABC9CC0600197039</key>
+		<string>https://github.com/WangwangOK/-collectionView-.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>仿支付宝拖动效果.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>FFC003AB35C6CB3F915004CBABC9CC0600197039</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/WangwangOK/-collectionView-.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>FFC003AB35C6CB3F915004CBABC9CC0600197039</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FFC003AB35C6CB3F915004CBABC9CC0600197039</string>
+			<key>IDESourceControlWCCName</key>
+			<string>%E4%BB%BF%E6%94%AF%E4%BB%98%E5%AE%9D%E6%8B%96%E5%8A%A8%E6%95%88%E6%9E%9C</string>
+		</dict>
+	</array>
+</dict>
+</plist>
