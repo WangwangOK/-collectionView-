@@ -13,16 +13,24 @@
                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="s9d-un-mbV">
-                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                        <rect key="frame" x="10" y="10" width="30" height="10"/>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ML5-Ge-hrO">
+                        <rect key="frame" x="6" y="21" width="38" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <constraints>
-                <constraint firstItem="s9d-un-mbV" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="fVF-2f-9uK"/>
-                <constraint firstAttribute="bottom" secondItem="s9d-un-mbV" secondAttribute="bottom" id="gET-TQ-4CB"/>
-                <constraint firstAttribute="trailing" secondItem="s9d-un-mbV" secondAttribute="trailing" id="tQz-K0-Om3"/>
-                <constraint firstItem="s9d-un-mbV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vBo-bc-b7f"/>
+                <constraint firstAttribute="trailing" secondItem="s9d-un-mbV" secondAttribute="trailing" constant="10" id="050-ah-veG"/>
+                <constraint firstItem="ML5-Ge-hrO" firstAttribute="top" secondItem="s9d-un-mbV" secondAttribute="bottom" constant="1" id="OeR-hN-3R6"/>
+                <constraint firstAttribute="centerX" secondItem="ML5-Ge-hrO" secondAttribute="centerX" id="RZf-jS-j9K"/>
+                <constraint firstItem="s9d-un-mbV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="oth-Ap-8J3"/>
+                <constraint firstItem="s9d-un-mbV" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="s4J-8h-eHM"/>
+                <constraint firstAttribute="bottom" secondItem="s9d-un-mbV" secondAttribute="bottom" constant="30" id="uAE-Ap-8jY"/>
             </constraints>
             <connections>
                 <outlet property="imageView" destination="s9d-un-mbV" id="EWT-fA-RzZ"/>

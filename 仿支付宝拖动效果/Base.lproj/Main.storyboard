@@ -20,11 +20,11 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lul-FV-VuY">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RBM-y9-Rmi">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="osp_scan_pay_normal" translatesAutoresizingMaskIntoConstraints="NO" id="RBM-y9-Rmi">
                                         <rect key="frame" x="35" y="35" width="50" height="50"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QX8-3b-dWa">
-                                        <rect key="frame" x="135" y="35" width="50" height="50"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_-card_normal" translatesAutoresizingMaskIntoConstraints="NO" id="QX8-3b-dWa">
+                                        <rect key="frame" x="135" y="27" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="dNa-D0-kD2"/>
                                             <constraint firstAttribute="width" constant="50" id="xgR-iy-A5n"/>
@@ -37,7 +37,7 @@
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="centerX" secondItem="QX8-3b-dWa" secondAttribute="centerX" id="LXy-i2-N1T"/>
-                                    <constraint firstAttribute="centerY" secondItem="QX8-3b-dWa" secondAttribute="centerY" id="aq7-ZM-ymH"/>
+                                    <constraint firstAttribute="centerY" secondItem="QX8-3b-dWa" secondAttribute="centerY" constant="8" id="aq7-ZM-ymH"/>
                                     <constraint firstAttribute="width" secondItem="lul-FV-VuY" secondAttribute="height" multiplier="8:3" id="reY-JA-gR8"/>
                                 </constraints>
                             </view>
@@ -77,4 +77,8 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="icon_-card_normal" width="33" height="32"/>
+        <image name="osp_scan_pay_normal" width="32" height="32"/>
+    </resources>
 </document>

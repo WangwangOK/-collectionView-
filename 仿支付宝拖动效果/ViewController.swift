@@ -18,13 +18,13 @@ class ViewController: UIViewController,UICollectionViewDelegateFlowLayout {
     
     
     var dataSorce:NSMutableArray = {
-        return ["app-icon-60_18","app-icon-60_19","app-icon-60_20","app-icon-60_21","app-icon-60_22","app-icon-60_23","app-icon-60_24","app-icon-60_25"]
+        return ["1","2","3","4","5","6","7","8","9","10","11","12"]
     }()
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.collectionView.registerNib(UINib(nibName: "CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "cellID")
-        var longPressGesture = UILongPressGestureRecognizer(target: self, action: "onLongPressInCollectionView:")
+        let longPressGesture = UILongPressGestureRecognizer(target: self, action: "onLongPressInCollectionView:")
         self.collectionView.addGestureRecognizer(longPressGesture)
     }
 
@@ -34,11 +34,11 @@ class ViewController: UIViewController,UICollectionViewDelegateFlowLayout {
     }
     func onLongPressInCollectionView(gesture:UILongPressGestureRecognizer){
         
-        var state:UIGestureRecognizerState = gesture.state
+        let state:UIGestureRecognizerState = gesture.state
         
-        var location = gesture.locationInView(self.collectionView)
+        let location = gesture.locationInView(self.collectionView)
         
-        var indexPath = self.collectionView.indexPathForItemAtPoint(location)
+        let indexPath = self.collectionView.indexPathForItemAtPoint(location)
         
         switch state{
             
@@ -47,7 +47,7 @@ class ViewController: UIViewController,UICollectionViewDelegateFlowLayout {
                 return
             }
             sourceIndex = indexPath!
-            var cell:CollectionViewCell = self.collectionView.cellForItemAtIndexPath(indexPath!) as! CollectionViewCell
+            let cell:CollectionViewCell = self.collectionView.cellForItemAtIndexPath(indexPath!) as! CollectionViewCell
             snapshot = onSnapshotFromView(cell)
             snapshot.alpha = 0.0
             snapshot.center = cell.center;
@@ -62,7 +62,7 @@ class ViewController: UIViewController,UICollectionViewDelegateFlowLayout {
                 }, completion: { (Bool) -> Void in
                     cell.hidden = true
             })
-            print("Begin")
+            print("Begin", terminator: "")
             break
         case UIGestureRecognizerState.Changed:
             snapshot.center = location
@@ -112,25 +112,25 @@ class ViewController: UIViewController,UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        return CGSizeMake(80, 80)
+        return CGSizeMake(60, 80)
     }
     
     func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAtIndex section: Int) -> UIEdgeInsets {
-        return UIEdgeInsetsMake(5, 5, 5, 5)
+        return UIEdgeInsetsMake(20, 20, 20, 20)
     }
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        print("点击")
+        print("点击", terminator: "")
     }
     
     //MARK: - 截屏 -
     private func onSnapshotFromView(inputView:UIView) -> UIView{
         // Make an image from the input view.
         UIGraphicsBeginImageContextWithOptions(inputView.bounds.size, false, 0);
-        inputView.layer.renderInContext(UIGraphicsGetCurrentContext())
-        var image = UIGraphicsGetImageFromCurrentImageContext()
+        inputView.layer.renderInContext(UIGraphicsGetCurrentContext()!)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext();
         
-        var snapshot = UIImageView(image: image)
+        let snapshot = UIImageView(image: image)
         snapshot.layer.masksToBounds = false;
         snapshot.layer.cornerRadius = 0.0;
         snapshot.layer.shadowOffset = CGSizeMake(-5.0, 0.0);

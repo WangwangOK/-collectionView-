@@ -162,6 +162,8 @@
 		1EC818431B676CD0005B4626 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = wangwang;
 				TargetAttributes = {
@@ -417,6 +419,7 @@
 				1EC8186C1B676CD0005B4626 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1EC8186D1B676CD0005B4626 /* Build configuration list for PBXNativeTarget "仿支付宝拖动效果Tests" */ = {
 			isa = XCConfigurationList;
@@ -425,6 +428,7 @@
 				1EC8186F1B676CD0005B4626 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
